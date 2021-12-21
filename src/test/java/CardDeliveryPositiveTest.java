@@ -32,6 +32,6 @@ public class CardDeliveryPositiveTest {
         $("[data-test-id='agreement'] .checkbox__box ").click();
         $("[class='button__content']").click();
         $("[data-test-id='notification'] .notification__title").shouldHave(text("Успешно!"), Duration.ofSeconds(15));
-        $("[data-test-id='notification'] .notification__content").shouldHave(text("Встреча успешно забронирована на " + planningDate));
+        $("[data-test-id='notification'] .notification__content").shouldHave(text("Встреча успешно забронирована на" + planningDate));
     }
 }
